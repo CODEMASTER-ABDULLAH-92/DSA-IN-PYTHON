@@ -1,3 +1,6 @@
+# -------------------------
+# Methode 1
+# -------------------------
 
 # my_list = [23,54,44,32,65]
 # def linearSearch(target):
@@ -13,6 +16,10 @@
 # for index, value in enumerate(my_list):
 #     print(index, value)
 
+# -------------------------
+# Methode 2
+# -------------------------
+
 
 my_list = [23,54,44,32,65]
 def linearSearch(target):
@@ -25,3 +32,17 @@ def linearSearch(target):
 linearSearch(32)
 
 
+# -------------------------
+# Methode 3
+# -------------------------
+
+
+my_list = [23,54,44,32,65]
+def linearSearch(target):
+    for i in range(len(my_list)):
+        if(target == my_list[i]):  
+            print(i, my_list[i])
+            return
+    print("Element is not present")
+    
+linearSearch(32)
